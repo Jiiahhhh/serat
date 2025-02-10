@@ -10,6 +10,7 @@ class UrlMappings {
         "/"(view:"/home/index")
         "/home"(view:"/home/home")
         "/search"(view:"/search/index")
+        "/detail"(view:"/detail/detail")
         "500"(view:'/error')
         "404"(view:'/notFound')
 

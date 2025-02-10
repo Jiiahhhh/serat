@@ -1,0 +1,63 @@
+.book-detail {
+    display: flex;
+    align-items: center;
+}
+
+.book-cover {
+    width: 160px;
+    height: 240px;
+    object-fit: cover;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+.book-title {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.book-meta {
+    font-size: 14px;
+    color: #555;
+}
+
+.buttons .btn {
+    margin-right: 10px;
+}
+
+.book-synopsis {
+    font-size: 16px;
+    color: #444;
+}
+
+.tags .badge {
+    margin-right: 5px;
+    font-size: 14px;
+}
+
+.book-synopsis {
+    font-size: 16px;
+    color: #444;
+}
+
+.tags .badge {
+    margin-right: 5px;
+    font-size: 14px;
+}
+
+.recommended-books .book-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.book-card-img {
+    width: 80px;
+    height: 120px;
+    object-fit: cover;
+    margin-right: 10px;
+    border-radius: 5px;
+}

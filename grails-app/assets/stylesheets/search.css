@@ -1,8 +1,10 @@
 body {
     background: #FFFFFF;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
+
 
 .filters h5 {
     font-weight: bold;

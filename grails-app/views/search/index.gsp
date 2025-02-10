@@ -170,6 +170,138 @@
                             </div>
                         </div>
                     </div>
+
+                    <div class="col-md-6">
+                        <div class="card book-card d-flex flex-row">
+                            <!-- Cover Buku -->
+                            <img class="card-img-left flex-shrink-0"
+                                 src="${createLink(controller: 'image', action: 'showImage',
+                                         params: [fileName: '/book_cover/bumi_manusia.jpg'])}"
+                                 alt="Bumi Manusia">
+
+                            <!-- Detail Buku -->
+                            <div class="card-body flex-grow-1">
+                                <h5 class="card-title">Bumi Manusia</h5>
+
+                                <p class="card-author">By Pramodya Ananta Toer</p>
+
+                                <p class="card-rating">⭐ 4.75 / 5 (10,000 voters)</p>
+
+                                <p class="card-text">lorem ipsum asadfha0fqaofh0iaj dfjq0ifjh0iq</p>
+                                <a href="#" class="btn btn-primary">Read Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="card book-card d-flex flex-row">
+                            <!-- Cover Buku -->
+                            <img class="card-img-left flex-shrink-0"
+                                 src="${createLink(controller: 'image', action: 'showImage',
+                                         params: [fileName: '/book_cover/bumi_manusia.jpg'])}"
+                                 alt="Bumi Manusia">
+
+                            <!-- Detail Buku -->
+                            <div class="card-body flex-grow-1">
+                                <h5 class="card-title">Bumi Manusia</h5>
+
+                                <p class="card-author">By Pramodya Ananta Toer</p>
+
+                                <p class="card-rating">⭐ 4.75 / 5 (10,000 voters)</p>
+
+                                <p class="card-text">lorem ipsum asadfha0fqaofh0iaj dfjq0ifjh0iq</p>
+                                <a href="#" class="btn btn-primary">Read Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="card book-card d-flex flex-row">
+                            <!-- Cover Buku -->
+                            <img class="card-img-left flex-shrink-0"
+                                 src="${createLink(controller: 'image', action: 'showImage',
+                                         params: [fileName: '/book_cover/bumi_manusia.jpg'])}"
+                                 alt="Bumi Manusia">
+
+                            <!-- Detail Buku -->
+                            <div class="card-body flex-grow-1">
+                                <h5 class="card-title">Bumi Manusia</h5>
+
+                                <p class="card-author">By Pramodya Ananta Toer</p>
+
+                                <p class="card-rating">⭐ 4.75 / 5 (10,000 voters)</p>
+
+                                <p class="card-text">lorem ipsum asadfha0fqaofh0iaj dfjq0ifjh0iq</p>
+                                <a href="#" class="btn btn-primary">Read Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="card book-card d-flex flex-row">
+                            <!-- Cover Buku -->
+                            <img class="card-img-left flex-shrink-0"
+                                 src="${createLink(controller: 'image', action: 'showImage',
+                                         params: [fileName: '/book_cover/bumi_manusia.jpg'])}"
+                                 alt="Bumi Manusia">
+
+                            <!-- Detail Buku -->
+                            <div class="card-body flex-grow-1">
+                                <h5 class="card-title">Bumi Manusia</h5>
+
+                                <p class="card-author">By Pramodya Ananta Toer</p>
+
+                                <p class="card-rating">⭐ 4.75 / 5 (10,000 voters)</p>
+
+                                <p class="card-text">lorem ipsum asadfha0fqaofh0iaj dfjq0ifjh0iq</p>
+                                <a href="#" class="btn btn-primary">Read Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="card book-card d-flex flex-row">
+                            <!-- Cover Buku -->
+                            <img class="card-img-left flex-shrink-0"
+                                 src="${createLink(controller: 'image', action: 'showImage',
+                                         params: [fileName: '/book_cover/bumi_manusia.jpg'])}"
+                                 alt="Bumi Manusia">
+
+                            <!-- Detail Buku -->
+                            <div class="card-body flex-grow-1">
+                                <h5 class="card-title">Bumi Manusia</h5>
+
+                                <p class="card-author">By Pramodya Ananta Toer</p>
+
+                                <p class="card-rating">⭐ 4.75 / 5 (10,000 voters)</p>
+
+                                <p class="card-text">lorem ipsum asadfha0fqaofh0iaj dfjq0ifjh0iq</p>
+                                <a href="#" class="btn btn-primary">Read Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="card book-card d-flex flex-row">
+                            <!-- Cover Buku -->
+                            <img class="card-img-left flex-shrink-0"
+                                 src="${createLink(controller: 'image', action: 'showImage',
+                                         params: [fileName: '/book_cover/bumi_manusia.jpg'])}"
+                                 alt="Bumi Manusia">
+
+                            <!-- Detail Buku -->
+                            <div class="card-body flex-grow-1">
+                                <h5 class="card-title">Bumi Manusia</h5>
+
+                                <p class="card-author">By Pramodya Ananta Toer</p>
+
+                                <p class="card-rating">⭐ 4.75 / 5 (10,000 voters)</p>
+
+                                <p class="card-text">lorem ipsum asadfha0fqaofh0iaj dfjq0ifjh0iq</p>
+                                <a href="#" class="btn btn-primary">Read Now</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
