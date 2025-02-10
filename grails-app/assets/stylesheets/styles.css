@@ -1,0 +1,636 @@
+.navbar {
+    padding: 1rem 0;
+}
+
+.navbar-nav {
+    gap: 15px;
+}
+
+.icon-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid white;
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Favorite Button */
+.icon-btn i.fa-heart {
+    font-size: 20px;
+}
+
+/* Sign In Button */
+.sign-in-btn {
+    width: auto;
+    padding: 5px 15px;
+    border-radius: 25px;
+    display: flex;
+    border: black solid 1px;
+    align-items: center;
+    gap: 10px;
+}
+
+.sign-in-btn span {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Hover Effects */
+.icon-btn:hover {
+    background: black;
+    color: white;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-item {
+    margin: 0 10px;
+}
+
+.nav-link {
+    padding: 10px 15px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-link:hover {
+    background-color: #f8f9fa;
+}
+
+.dropdown-menu {
+    border-radius: 10px;
+}
+
+.form-inline {
+    width: 100%;
+}
+
+.form-control {
+    width: 100%;
+}
+
+/* Hero Section Styling */
+.hero-section {
+    padding: 100px 0;
+    background-color: #f8f9fa;
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero-section h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.hero-section .author {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.hero-section .description {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.hero-section .btn {
+    margin-right: 10px;
+}
+
+/* Image Box Styling */
+.image-box {
+    height: 200px;
+    background-color: #ddd;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.image-box.top-rounded {
+    border-top-left-radius: 120px;
+    border-top-right-radius: 120px;
+}
+
+.image-box.bottom-rounded {
+    border-bottom-left-radius: 120px;
+    border-bottom-right-radius: 120px;
+}
+
+.text-overlay {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: #fff;
+}
+
+.text-overlay h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.text-overlay .author {
+    font-size: 1rem;
+    color: #fff;
+}
+
+/* Best Seller Section Styling */
+.best-seller-section {
+    padding: 80px 0;
+    background-color: #f8f9fa;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.book-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.book-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.book-author {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Online Book Fairs Section */
+.online-book-fairs-section {
+    padding: 80px 0;
+    background-color: #0D1117; /* Warna lebih gelap untuk kontras */
+}
+
+/* Teks Konten */
+.text-content {
+    text-align: left;
+}
+
+.online-book-fairs-section .section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.online-book-fairs-section .section-description {
+    font-size: 1rem;
+    color: white;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+/* Tombol di tengah */
+.online-book-fairs-section .btn-primary {
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 12px 32px;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    transition: all 0.3s ease;
+}
+
+.online-book-fairs-section .btn-primary:hover {
+    background-color: white;
+    color: #0D1117;
+}
+
+/* Layout Gambar Buku */
+.book-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+}
+
+/* Efek Rotasi pada Gambar */
+.book-images img {
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Efek Rotasi Kiri */
+.book-images .rotated.left {
+    transform: rotate(-15deg) translateY(10px);
+}
+
+/* Efek Rotasi Tengah */
+.book-images .rotated.center {
+    transform: scale(1.1);
+}
+
+/* Efek Rotasi Kanan */
+.book-images .rotated.right {
+    transform: rotate(15deg) translateY(10px);
+}
+
+/* Hover Effect */
+.book-images img:hover {
+    transform: scale(1.15) !important;
+}
+
+
+/* Categories Section Styling */
+.categories-section {
+    padding: 80px 0;
+    background-color: #f8f9fa;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.category-box {
+    height: 570px;
+    background-color: #ddd;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.category-box.bottom-rounded {
+    border-bottom-left-radius: 256px;
+    border-bottom-right-radius: 256px;
+}
+
+.category-box.top-rounded {
+    border-top-left-radius: 256px;
+    border-top-right-radius: 256px;
+}
+
+.category-content {
+    padding: 20px;
+    text-align: center;
+}
+
+.category-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/*Carousel*/
+.carousel-container {
+    text-align: center;
+    padding: 40px;
+    font-family: 'Arial', sans-serif;
+}
+
+.carousel {
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.carousel-track {
+    display: flex;
+    flex-wrap: nowrap;
+    transition: transform 0.5s ease-in-out;
+    min-height: 250px;
+}
+
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    height: 250px;
+}
+
+.card {
+    background-color: #0d0d26;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    min-height: 100%;
+}
+
+.card h3 {
+    font-size: 16px;
+    margin: 0;
+    opacity: 0.7;
+}
+
+.card h2 {
+    font-size: 22px;
+    margin: 5px 0;
+}
+
+.card p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 50%;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.carousel-dots {
+    margin-top: 20px;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #717171;
+}
+
+
+/* Footer Styling */
+.site-footer {
+    background-color: #120A13; /* Warna gelap sesuai gambar */
+    padding: 20px 0;
+    color: #C6AAB9; /* Warna teks yang lebih lembut */
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Logo */
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.footer-logo img {
+    width: 24px; /* Sesuaikan ukuran ikon */
+    height: 24px;
+}
+
+.footer-brand {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Footer Menu */
+.footer-menu {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-menu li a {
+    color: #C6AAB9;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-menu li a:hover {
+    color: #FFFFFF;
+}
+
+/* Copyright */
+.footer-copyright {
+    font-size: 14px;
+    color: #C6AAB9;
+}
+
+/* Container untuk search bar */
+.search-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.search-container {
+    position: relative;
+    width: 300px; /* Sesuaikan lebar sesuai kebutuhan */
+    border-bottom: 2px solid #000; /* Garis bawah seperti di gambar */
+    display: flex;
+    align-items: center;
+}
+
+/* Input Search */
+.search-input {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding: 8px;
+    background: transparent;
+}
+
+/* Tombol Search (Ikon) */
+.search-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: black; /* Warna ikon */
+    position: absolute;
+    right: 5px;
+    display: flex;
+    align-items: center;
+}
+
+/* Jika ingin ikon lebih kecil */
+.search-btn i {
+    font-size: 16px;
+}
+
+/* Hover effect untuk ikon */
+.search-btn:hover {
+    color: gray;
+}
+
+.carousel-container {
+    position: relative;
+    width: 320px;
+    overflow: hidden;
+}
+
+.carousel-wrapper {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    position: relative;
+    width: 320px;
+    height: 485px;
+    background-color: #111;
+    color: white;
+    padding: 20px;
+    border-radius: 0 0 256px 256px;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.title {
+    font-size: 12px;
+    opacity: 0.7;
+}
+
+h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 12px;
+    opacity: 0.7;
+    margin-top: 10px;
+}
+
+.description {
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 120px;
+    height: 120px;
+    background-color: #ccc;
+    border-radius: 0 0 256px 256px;
+    border: 2px solid blue;
+}
+
+.carousel-nav {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.carousel-nav button {
+    background-color: #555;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.carousel-nav button:hover {
+    background-color: #777;
+}
+
+.carousel-indicators {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    background-color: gray;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: blue;
+}
