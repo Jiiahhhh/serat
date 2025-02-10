@@ -15,12 +15,12 @@
 </head>
 
 <body>
-<g:render template="common/navbar"/>
+<g:render template="/_common/navbar"/>
 <g:render template="home/shared/hero"/>
 <g:render template="home/shared/bestseller"/>
 <g:render template="home/shared/onlinebookfairs"/>
 <g:render template="home/shared/categories"/>
-<g:render template="common/footer"/>
+<g:render template="/_common/footer"/>
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>

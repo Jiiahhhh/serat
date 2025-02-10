@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:wght@400;600;800&family=Volkhov:wght@400;700&display=swap');
+
+body {
+    background: #FFFFFF;
+    font-family: 'Volkhov', serif;
+}
+
+.login-form {
+    max-width: 400px;
+    margin: auto;
+}
+
+/*Form Input*/
+.form-control {
+    border-radius: 8px;
+    height: 45px;
+}
+
+.toggle-password {
+    cursor: pointer;
+}
+
+.oauth-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.oauth-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ddd;
+    background: white;
+}
+
+.oauth-btn img {
+    width: 24px;
+    height: 24px;
+}
+
+.decor-image {
+    position: relative;
+    width: 400px;
+    max-height: 700px;
+    border-radius: 56px;
+    overflow: hidden;
+}
+
+.decor-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: 8px;
+    color: white;
+    text-align: center;
+}
+
+.brand-logo {
+    font-size: 28px;
+    font-weight: bold;
+}
