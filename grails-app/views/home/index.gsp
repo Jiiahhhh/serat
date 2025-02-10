@@ -16,12 +16,12 @@
 
 <body>
 
-<g:render template="home/shared/navbar"/>
+<g:render template="common/navbar"/>
 <g:render template="home/shared/hero"/>
 <g:render template="home/shared/bestseller"/>
 <g:render template="home/shared/onlinebookfairs"/>
 <g:render template="home/shared/categories"/>
-<g:render template="home/shared/footer"/>
+<g:render template="common/footer"/>
 
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

@@ -350,6 +350,9 @@ body {
     background-color: var(--dark-blue); /* Warna gelap sesuai gambar */
     padding: 20px 0;
     color: white; /* Warna teks yang lebih lembut */
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
 .container {
