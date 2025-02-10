@@ -7,8 +7,8 @@ class UrlMappings {
                 // apply constraints here
             }
         }
-
         "/"(view:"/home/index")
+        "/home"(view:"/home/home")
         "500"(view:'/error')
         "404"(view:'/notFound')
 

@@ -1,9 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:wght@400;600;800&family=Volkhov:wght@400;700&display=swap');
+
+:root {
+    --dark-blue: #0B1220;
+}
+
+body {
+    font-family: 'Volkhov', serif;
+}
+
 .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     padding: 1rem 0;
 }
 
 .navbar-nav {
-    gap: 15px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
 }
 
 .icon-btn {
@@ -84,10 +99,21 @@
     background-color: #f8f9fa;
 }
 
+.hero-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.hero-header .icon img {
+    width: 60px;
+    height: auto;
+}
+
 .hero-section h1 {
     font-size: 3rem;
     font-weight: bold;
-    margin-bottom: 20px;
+    margin: 0;
 }
 
 .hero-section h2 {
@@ -114,7 +140,7 @@
 
 /* Image Box Styling */
 .image-box {
-    height: 200px;
+    height: 300px;
     background-color: #ddd;
     position: relative;
     margin-bottom: 20px;
@@ -162,44 +188,43 @@
 }
 
 .book-card {
-    background-color: #fff;
-    border-radius: 10px;
+    /*background-color: #fff;*/
     padding: 20px;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: start;
     margin-bottom: 20px;
 }
 
 .book-title {
-    font-size: 1.5rem;
+    font-size: 20px;
     font-weight: bold;
     margin-bottom: 10px;
 }
 
-.book-author {
-    font-size: 1rem;
+.author {
+    font-size: 16px;
     color: #666;
     margin-bottom: 20px;
 }
 
 .btn-primary {
-    background-color: #007bff;
+    background-color: var(--dark-blue);
     border: none;
     padding: 10px 20px;
-    border-radius: 5px;
     color: #fff;
     font-size: 1rem;
     cursor: pointer;
 }
 
 .btn-primary:hover {
-    background-color: #0056b3;
+    background-color: white;
+    color: var(--dark-blue);
+    border: 1px solid var(--dark-blue);
 }
 
 /* Online Book Fairs Section */
 .online-book-fairs-section {
     padding: 80px 0;
-    background-color: #0D1117; /* Warna lebih gelap untuk kontras */
+    background-color: var(--dark-blue); /* Warna lebih gelap untuk kontras */
 }
 
 /* Teks Konten */
@@ -320,120 +345,11 @@
     margin-top: 10px;
 }
 
-.btn-primary {
-    background-color: #007bff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    color: #fff;
-    font-size: 1rem;
-    cursor: pointer;
-}
-
-.btn-primary:hover {
-    background-color: #0056b3;
-}
-
-/*Carousel*/
-.carousel-container {
-    text-align: center;
-    padding: 40px;
-    font-family: 'Arial', sans-serif;
-}
-
-.carousel {
-    position: relative;
-    max-width: 800px;
-    margin: auto;
-    overflow: hidden;
-}
-
-.carousel-track {
-    display: flex;
-    flex-wrap: nowrap;
-    transition: transform 0.5s ease-in-out;
-    min-height: 250px;
-}
-
-.carousel-item {
-    min-width: 100%;
-    box-sizing: border-box;
-    flex: 0 0 auto;
-    height: 250px;
-}
-
-.card {
-    background-color: #0d0d26;
-    color: white;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: left;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    min-height: 100%;
-}
-
-.card h3 {
-    font-size: 16px;
-    margin: 0;
-    opacity: 0.7;
-}
-
-.card h2 {
-    font-size: 22px;
-    margin: 5px 0;
-}
-
-.card p {
-    font-size: 14px;
-    line-height: 1.6;
-}
-
-.carousel-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    cursor: pointer;
-    font-size: 18px;
-    border-radius: 50%;
-}
-
-.prev {
-    left: 10px;
-}
-
-.next {
-    right: 10px;
-}
-
-.carousel-dots {
-    margin-top: 20px;
-}
-
-.dot {
-    height: 10px;
-    width: 10px;
-    margin: 0 5px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    cursor: pointer;
-}
-
-.dot.active {
-    background-color: #717171;
-}
-
-
 /* Footer Styling */
 .site-footer {
-    background-color: #120A13; /* Warna gelap sesuai gambar */
+    background-color: var(--dark-blue); /* Warna gelap sesuai gambar */
     padding: 20px 0;
-    color: #C6AAB9; /* Warna teks yang lebih lembut */
-    font-family: Arial, sans-serif;
+    color: white; /* Warna teks yang lebih lembut */
 }
 
 .container {
@@ -456,8 +372,8 @@
 }
 
 .footer-logo img {
-    width: 24px; /* Sesuaikan ukuran ikon */
-    height: 24px;
+    width: 120px; /* Sesuaikan ukuran ikon */
+    height: 40px;
 }
 
 .footer-brand {
@@ -475,7 +391,7 @@
 }
 
 .footer-menu li a {
-    color: #C6AAB9;
+    color: white;
     text-decoration: none;
     font-size: 14px;
 }
@@ -487,7 +403,7 @@
 /* Copyright */
 .footer-copyright {
     font-size: 14px;
-    color: #C6AAB9;
+    color: white;
 }
 
 /* Container untuk search bar */
@@ -537,100 +453,4 @@
 /* Hover effect untuk ikon */
 .search-btn:hover {
     color: gray;
-}
-
-.carousel-container {
-    position: relative;
-    width: 320px;
-    overflow: hidden;
-}
-
-.carousel-wrapper {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-}
-
-.carousel-item {
-    position: relative;
-    width: 320px;
-    height: 485px;
-    background-color: #111;
-    color: white;
-    padding: 20px;
-    border-radius: 0 0 256px 256px;
-    flex-shrink: 0;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-}
-
-.title {
-    font-size: 12px;
-    opacity: 0.7;
-}
-
-h2 {
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-
-.subtitle {
-    font-size: 12px;
-    opacity: 0.7;
-    margin-top: 10px;
-}
-
-.description {
-    font-size: 14px;
-    opacity: 0.9;
-}
-
-.overlay {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 120px;
-    height: 120px;
-    background-color: #ccc;
-    border-radius: 0 0 256px 256px;
-    border: 2px solid blue;
-}
-
-.carousel-nav {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 10px;
-}
-
-.carousel-nav button {
-    background-color: #555;
-    color: white;
-    border: none;
-    padding: 8px 16px;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-.carousel-nav button:hover {
-    background-color: #777;
-}
-
-.carousel-indicators {
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-}
-
-.dot {
-    width: 10px;
-    height: 10px;
-    background-color: gray;
-    border-radius: 50%;
-    margin: 0 5px;
-    cursor: pointer;
-}
-
-.dot.active {
-    background-color: blue;
 }

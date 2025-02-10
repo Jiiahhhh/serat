@@ -1,46 +1,57 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const carousel = document.getElementById("carousel");
-    const prevBtn = document.getElementById("prevBtn");
-    const nextBtn = document.getElementById("nextBtn");
-    const dots = document.querySelectorAll(".dot");
-
+$(document).ready(function () {
     let currentIndex = 0;
-    const totalItems = document.querySelectorAll(".carousel-item").length;
 
-    function updateCarousel() {
-        const offset = -currentIndex * 320; // Lebar satu item
-        carousel.style.transform = `translateX(${offset}px)`;
+    function moveSlide(direction) {
+        const slides = document.querySelectorAll('.carousel-item');
+        const totalSlides = slides.length;
+        const track = document.querySelector('.carousel-track');
 
-        // Update indikator
-        dots.forEach((dot, index) => {
-            dot.classList.toggle("active", index === currentIndex);
-        });
+        currentIndex += direction;
 
-        // Disable tombol jika di batas
-        prevBtn.disabled = currentIndex === 0;
-        nextBtn.disabled = currentIndex === totalItems - 1;
+        if (currentIndex >= totalSlides) {
+            currentIndex = 0;
+        } else if (currentIndex < 0) {
+            currentIndex = totalSlides - 1;
+        }
+
+        updateCarousel();
     }
 
-    nextBtn.addEventListener("click", function () {
-        if (currentIndex < totalItems - 1) {
-            currentIndex++;
-            updateCarousel();
-        }
+    function currentSlide(index) {
+        currentIndex = index;
+        updateCarousel();
+    }
+
+    function updateCarousel() {
+        const track = document.querySelector('.carousel-track');
+        const dots = document.querySelectorAll('.dot');
+
+        track.style.transform = `translateX(-${currentIndex * 100}%)`;
+
+        dots.forEach((dot, i) => {
+            dot.classList.remove('active');
+            if (i === currentIndex) {
+                dot.classList.add('active');
+            }
+        });
+    }
+
+    // 🚀 **Tambahkan event listener untuk tombol navigasi**
+    document.querySelector(".prev").addEventListener("click", function () {
+        moveSlide(-1);
     });
 
-    prevBtn.addEventListener("click", function () {
-        if (currentIndex > 0) {
-            currentIndex--;
-            updateCarousel();
-        }
+    document.querySelector(".next").addEventListener("click", function () {
+        moveSlide(1);
     });
 
-    dots.forEach((dot, index) => {
+    // 🚀 **Tambahkan event listener untuk dot indicator**
+    document.querySelectorAll(".dot").forEach((dot, index) => {
         dot.addEventListener("click", function () {
-            currentIndex = index;
-            updateCarousel();
+            currentSlide(index);
         });
     });
 
+    // **Jalankan carousel pertama kali**
     updateCarousel();
 });
