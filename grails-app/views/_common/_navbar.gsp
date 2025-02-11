@@ -52,14 +52,14 @@
                     <ul class="navbar-nav d-flex flex-row align-items-center">
                         <!-- Favorite Button -->
                         <li class="nav-item me-3">
-                            <a href="#" class="icon-btn">
+                            <a href="" class="icon-btn">
                                 <i class="fas fa-heart"></i>
                             </a>
                         </li>
 
                         <!-- Sign In Button -->
                         <li class="nav-item">
-                            <a href="#" class="icon-btn sign-in-btn">
+                            <a href="${createLink(controller: 'login', action: 'index')}" class="icon-btn sign-in-btn">
                                 <span>Sign In</span>
                                 <i class="fas fa-user"></i>
                             </a>

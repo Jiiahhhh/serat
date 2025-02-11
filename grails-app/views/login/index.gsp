@@ -18,16 +18,20 @@
             <div class="login-form w-100">
                 <h1 class="mb-4">Login</h1>
 
-                <form action="#" method="post">
+                <g:if test='${flash.message}'>
+                    <div class="login_message">${flash.message}</div>
+                </g:if>
+
+                <form action="${postUrl ?: '/login/authenticate'}" method="POST" id="loginForm" class="cssform" autocomplete="off">
                     <div class="mb-3">
-                        <label for="email" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="email" placeholder="username@gmail.com" required>
+                        <label for="username" class="form-label">Email</label>
+                        <input type="text" class="form-control text_" id="username" autocapitalize="none" placeholder="username@gmail.com" name="${usernameParameter ?: 'username'}" required>
                     </div>
 
                     <div class="mb-3">
                         <label for="password" class="form-label">Password</label>
                         <div class="input-group">
-                            <input type="password" class="form-control" id="password" name="password" placeholder="Password" required>
+                            <input type="password" class="form-control text_" id="password" name="${passwordParameter ?: 'password'}" placeholder="Password" required>
                             <span class="input-group-text toggle-password"><i class="bi bi-eye"></i></span>
                         </div>
                     </div>
@@ -36,6 +40,7 @@
                         <a href="#" class="text-decoration-none">Forget Password?</a>
                     </div>
 
+%{--                    <input type="submit" id="submit" value="${message(code: 'springSecurity.login.button')}"/>--}%
                     <button type="submit" class="btn btn-dark w-100">Sign in</button>
                 </form>
 
@@ -53,7 +58,7 @@
 
                 <p class="text-center mt-3">
                     Don't have an account yet?
-                    <a href="#" class="text-decoration-none">Register for free</a>
+                    <a href="${createLink(controller: 'register', action: 'index')}" class="text-decoration-none">Register for free</a>
                 </p>
             </div>
         </div>
