@@ -3,7 +3,7 @@ package com.ilal
 class ImageController {
 
     def showImage(String fileName) {
-        File imageFile = new File("images/" + fileName)
+        File imageFile = new File("asset/images" + fileName)
 
         if (imageFile.exists()) {
             // Tentukan contentType berdasarkan ekstensi file
