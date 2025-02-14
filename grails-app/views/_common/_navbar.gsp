@@ -5,7 +5,7 @@
         <div class="row w-100 align-items-center">
             <!-- Logo Serat (2 kolom) -->
             <div class="col-2">
-                <a href="#">
+                <a href="${createLink(controller: 'home', action: 'index')}">
                     <img src="${createLink(controller: 'image', action: 'showImage',
                             params: [fileName: '/brand_logo.svg'])}">
                 </a>
@@ -58,12 +58,23 @@
                         </li>
 
                         <!-- Sign In Button -->
+                    <sec:ifNotGranted roles="ROLE_USER, ROLE_ADMIN">
                         <li class="nav-item">
                             <a href="${createLink(controller: 'login', action: 'index')}" class="icon-btn sign-in-btn">
                                 <span>Sign In</span>
                                 <i class="fas fa-user"></i>
                             </a>
                         </li>
+                    </sec:ifNotGranted>
+
+                    <sec:ifAllGranted roles="ROLE_USER">
+                        <li class="nav-item">
+                            <a href="${createLink(controller: 'profile', action: 'index')}" class="icon-btn sign-in-btn">
+                                <span>Profile</span>
+                                <i class="fas fa-user"></i>
+                            </a>
+                        </li>
+                    </sec:ifAllGranted>
                     </ul>
                 </div>
             </div>

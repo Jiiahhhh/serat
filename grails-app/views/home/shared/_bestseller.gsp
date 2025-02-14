@@ -3,53 +3,20 @@
         <h2 class="section-title">Best Seller</h2>
 
         <div class="row">
-            <!-- Buku 1 -->
-            <div class="col-lg-3 col-md-6">
-                <div class="book-card">
-                    <img class="image-box" src="${createLink(controller: 'image', action: 'showImage',
-                            params: [fileName: '/book_cover/bumi_manusia.jpg'])}">
-                    <h3 class="book-title">The Shawshank Redemption</h3>
-
-                    <p class="book-author">Author:</p>
-                    <button class="btn btn-primary">Read Now</button>
+            <g:each var="book" in="${bestSellerBooks}">
+                <div class="col-lg-3 col-md-6">
+                    <div class="book-card">
+                        <a href="${createLink(controller: 'detail', action: 'index', id: book.id)}">
+                            <img class="image-box" src="${createLink(controller: 'image', action: 'showImage',
+                                    params: [fileName: book.cover])}" alt="${book.title}">
+                        </a>
+                        <h3 class="book-title">${book.title}</h3>
+                        <p class="book-author">Author: ${book.author}</p>
+                        <p class="book-readers">📖 <g:formatNumber number="${book.readers}" format="###,###,###" /> Reads</p>
+                        <a href="${createLink(controller: 'detail', action: 'index', id: book.id)}" class="btn btn-primary">Read Now</a>
+                    </div>
                 </div>
-            </div>
-
-            <!-- Buku 2 -->
-            <div class="col-lg-3 col-md-6">
-                <div class="book-card">
-                    <img class="image-box" src="${createLink(controller: 'image', action: 'showImage',
-                            params: [fileName: '/book_cover/bumi_manusia.jpg'])}">
-                    <h3 class="book-title">The Shawshank Redemption</h3>
-
-                    <p class="book-author">Author:</p>
-                    <button class="btn btn-primary">Read Now</button>
-                </div>
-            </div>
-
-            <!-- Buku 3 -->
-            <div class="col-lg-3 col-md-6">
-                <div class="book-card">
-                    <img class="image-box" src="${createLink(controller: 'image', action: 'showImage',
-                            params: [fileName: '/book_cover/bumi_manusia.jpg'])}">
-                    <h3 class="book-title">The Shawshank Redemption</h3>
-
-                    <p class="book-author">Author:</p>
-                    <button class="btn btn-primary">Read Now</button>
-                </div>
-            </div>
-
-            <!-- Buku 4 -->
-            <div class="col-lg-3 col-md-6">
-                <div class="book-card">
-                    <img class="image-box" src="${createLink(controller: 'image', action: 'showImage',
-                            params: [fileName: '/book_cover/bumi_manusia.jpg'])}">
-                    <h3 class="book-title">The Shawshank Redemption</h3>
-
-                    <p class="book-author">Author:</p>
-                    <button class="btn btn-primary">Read Now</button>
-                </div>
-            </div>
+            </g:each>
         </div>
     </div>
 </section>

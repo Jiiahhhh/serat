@@ -61,7 +61,9 @@
 
                     <!-- Range Slider Year -->
                     <h5 class="mt-3">Year</h5>
+
                     <div id="yearRangeSlider"></div>
+
                     <p>Year: <span id="yearMin">1900</span> - <span id="yearMax">2025</span></p>
                     <input type="hidden" id="yearMinInput" value="1900">
                     <input type="hidden" id="yearMaxInput" value="2025">
@@ -83,259 +85,35 @@
             <!-- Search Results Section -->
             <div class="col-lg-9">
                 <div class="row gx-3 gy-4 mx-0" id="bookResults">
-                    <div class="col-md-6">
-                        <div class="card book-card d-flex flex-row">
-                            <!-- Cover Buku -->
-                            <img class="card-img-left flex-shrink-0"
-                                 src="${createLink(controller: 'image', action: 'showImage',
-                                         params: [fileName: '/book_cover/bumi_manusia.jpg'])}"
-                                 alt="Bumi Manusia">
+                    <g:each var="book" in="${books}">
+                        <div class="col-md-6">
+                            <div class="card book-card d-flex flex-row">
+                                <!-- Cover Buku -->
+                                <img class="card-img-left flex-shrink-0"
+                                     src="${createLink(controller: 'image', action: 'showImage',
+                                             params: [fileName: '/book_cover/' + book.cover])}"
+                                     alt="${book.title}">
 
-                            <!-- Detail Buku -->
-                            <div class="card-body flex-grow-1">
-                                <h5 class="card-title">Bumi Manusia</h5>
+                                <!-- Detail Buku -->
+                                <div class="card-body flex-grow-1">
+                                    <h5 class="card-title">${book.title}</h5>
 
-                                <p class="card-author">By Pramodya Ananta Toer</p>
+                                    <p class="card-author">By ${book.author}</p>
 
-                                <p class="card-rating">⭐ 4.75 / 5 (10,000 voters)</p>
+                                    <p class="card-rating">⭐ ${book.rating} / 5 (${book.votes} voters)</p>
 
-                                <p class="card-text">lorem ipsum asadfha0fqaofh0iaj dfjq0ifjh0iq</p>
-                                <a href="#" class="btn btn-primary">Read Now</a>
+                                    <p class="card-text">${book.description}</p>
+                                    <a href="${book.link}" class="btn btn-primary">Read Now</a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="col-md-6">
-                        <div class="card book-card d-flex flex-row">
-                            <!-- Cover Buku -->
-                            <img class="card-img-left flex-shrink-0"
-                                 src="${createLink(controller: 'image', action: 'showImage',
-                                         params: [fileName: '/book_cover/bumi_manusia.jpg'])}"
-                                 alt="Bumi Manusia">
-
-                            <!-- Detail Buku -->
-                            <div class="card-body flex-grow-1">
-                                <h5 class="card-title">Bumi Manusia</h5>
-
-                                <p class="card-author">By Pramodya Ananta Toer</p>
-
-                                <p class="card-rating">⭐ 4.75 / 5 (10,000 voters)</p>
-
-                                <p class="card-text">lorem ipsum asadfha0fqaofh0iaj dfjq0ifjh0iq</p>
-                                <a href="#" class="btn btn-primary">Read Now</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6">
-                        <div class="card book-card d-flex flex-row">
-                            <!-- Cover Buku -->
-                            <img class="card-img-left flex-shrink-0"
-                                 src="${createLink(controller: 'image', action: 'showImage',
-                                         params: [fileName: '/book_cover/bumi_manusia.jpg'])}"
-                                 alt="Bumi Manusia">
-
-                            <!-- Detail Buku -->
-                            <div class="card-body flex-grow-1">
-                                <h5 class="card-title">Bumi Manusia</h5>
-
-                                <p class="card-author">By Pramodya Ananta Toer</p>
-
-                                <p class="card-rating">⭐ 4.75 / 5 (10,000 voters)</p>
-
-                                <p class="card-text">lorem ipsum asadfha0fqaofh0iaj dfjq0ifjh0iq</p>
-                                <a href="#" class="btn btn-primary">Read Now</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6">
-                        <div class="card book-card d-flex flex-row">
-                            <!-- Cover Buku -->
-                            <img class="card-img-left flex-shrink-0"
-                                 src="${createLink(controller: 'image', action: 'showImage',
-                                         params: [fileName: '/book_cover/bumi_manusia.jpg'])}"
-                                 alt="Bumi Manusia">
-
-                            <!-- Detail Buku -->
-                            <div class="card-body flex-grow-1">
-                                <h5 class="card-title">Bumi Manusia</h5>
-
-                                <p class="card-author">By Pramodya Ananta Toer</p>
-
-                                <p class="card-rating">⭐ 4.75 / 5 (10,000 voters)</p>
-
-                                <p class="card-text">lorem ipsum asadfha0fqaofh0iaj dfjq0ifjh0iq</p>
-                                <a href="#" class="btn btn-primary">Read Now</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6">
-                        <div class="card book-card d-flex flex-row">
-                            <!-- Cover Buku -->
-                            <img class="card-img-left flex-shrink-0"
-                                 src="${createLink(controller: 'image', action: 'showImage',
-                                         params: [fileName: '/book_cover/bumi_manusia.jpg'])}"
-                                 alt="Bumi Manusia">
-
-                            <!-- Detail Buku -->
-                            <div class="card-body flex-grow-1">
-                                <h5 class="card-title">Bumi Manusia</h5>
-
-                                <p class="card-author">By Pramodya Ananta Toer</p>
-
-                                <p class="card-rating">⭐ 4.75 / 5 (10,000 voters)</p>
-
-                                <p class="card-text">lorem ipsum asadfha0fqaofh0iaj dfjq0ifjh0iq</p>
-                                <a href="#" class="btn btn-primary">Read Now</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6">
-                        <div class="card book-card d-flex flex-row">
-                            <!-- Cover Buku -->
-                            <img class="card-img-left flex-shrink-0"
-                                 src="${createLink(controller: 'image', action: 'showImage',
-                                         params: [fileName: '/book_cover/bumi_manusia.jpg'])}"
-                                 alt="Bumi Manusia">
-
-                            <!-- Detail Buku -->
-                            <div class="card-body flex-grow-1">
-                                <h5 class="card-title">Bumi Manusia</h5>
-
-                                <p class="card-author">By Pramodya Ananta Toer</p>
-
-                                <p class="card-rating">⭐ 4.75 / 5 (10,000 voters)</p>
-
-                                <p class="card-text">lorem ipsum asadfha0fqaofh0iaj dfjq0ifjh0iq</p>
-                                <a href="#" class="btn btn-primary">Read Now</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6">
-                        <div class="card book-card d-flex flex-row">
-                            <!-- Cover Buku -->
-                            <img class="card-img-left flex-shrink-0"
-                                 src="${createLink(controller: 'image', action: 'showImage',
-                                         params: [fileName: '/book_cover/bumi_manusia.jpg'])}"
-                                 alt="Bumi Manusia">
-
-                            <!-- Detail Buku -->
-                            <div class="card-body flex-grow-1">
-                                <h5 class="card-title">Bumi Manusia</h5>
-
-                                <p class="card-author">By Pramodya Ananta Toer</p>
-
-                                <p class="card-rating">⭐ 4.75 / 5 (10,000 voters)</p>
-
-                                <p class="card-text">lorem ipsum asadfha0fqaofh0iaj dfjq0ifjh0iq</p>
-                                <a href="#" class="btn btn-primary">Read Now</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6">
-                        <div class="card book-card d-flex flex-row">
-                            <!-- Cover Buku -->
-                            <img class="card-img-left flex-shrink-0"
-                                 src="${createLink(controller: 'image', action: 'showImage',
-                                         params: [fileName: '/book_cover/bumi_manusia.jpg'])}"
-                                 alt="Bumi Manusia">
-
-                            <!-- Detail Buku -->
-                            <div class="card-body flex-grow-1">
-                                <h5 class="card-title">Bumi Manusia</h5>
-
-                                <p class="card-author">By Pramodya Ananta Toer</p>
-
-                                <p class="card-rating">⭐ 4.75 / 5 (10,000 voters)</p>
-
-                                <p class="card-text">lorem ipsum asadfha0fqaofh0iaj dfjq0ifjh0iq</p>
-                                <a href="#" class="btn btn-primary">Read Now</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6">
-                        <div class="card book-card d-flex flex-row">
-                            <!-- Cover Buku -->
-                            <img class="card-img-left flex-shrink-0"
-                                 src="${createLink(controller: 'image', action: 'showImage',
-                                         params: [fileName: '/book_cover/bumi_manusia.jpg'])}"
-                                 alt="Bumi Manusia">
-
-                            <!-- Detail Buku -->
-                            <div class="card-body flex-grow-1">
-                                <h5 class="card-title">Bumi Manusia</h5>
-
-                                <p class="card-author">By Pramodya Ananta Toer</p>
-
-                                <p class="card-rating">⭐ 4.75 / 5 (10,000 voters)</p>
-
-                                <p class="card-text">lorem ipsum asadfha0fqaofh0iaj dfjq0ifjh0iq</p>
-                                <a href="#" class="btn btn-primary">Read Now</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6">
-                        <div class="card book-card d-flex flex-row">
-                            <!-- Cover Buku -->
-                            <img class="card-img-left flex-shrink-0"
-                                 src="${createLink(controller: 'image', action: 'showImage',
-                                         params: [fileName: '/book_cover/bumi_manusia.jpg'])}"
-                                 alt="Bumi Manusia">
-
-                            <!-- Detail Buku -->
-                            <div class="card-body flex-grow-1">
-                                <h5 class="card-title">Bumi Manusia</h5>
-
-                                <p class="card-author">By Pramodya Ananta Toer</p>
-
-                                <p class="card-rating">⭐ 4.75 / 5 (10,000 voters)</p>
-
-                                <p class="card-text">lorem ipsum asadfha0fqaofh0iaj dfjq0ifjh0iq</p>
-                                <a href="#" class="btn btn-primary">Read Now</a>
-                            </div>
-                        </div>
-                    </div>
+                    </g:each>
                 </div>
             </div>
-
-            %{--        <!-- Search Results Section -->--}%
-            %{--        <div class="col-lg-9">--}%
-            %{--            <div class="row gx-3 gy-4 mx-0" id="bookResults">--}%
-            %{--                <g:each var="book" in="${books}">--}%
-            %{--                    <div class="col-md-6">--}%
-            %{--                        <div class="card book-card d-flex flex-row">--}%
-            %{--                            <!-- Cover Buku -->--}%
-            %{--                            <img class="card-img-left flex-shrink-0"--}%
-            %{--                                 src="${createLink(controller: 'image', action: 'showImage',--}%
-            %{--                                         params: [fileName: '/book_cover/' + book.cover])}"--}%
-            %{--                                 alt="${book.title}">--}%
-
-            %{--                            <!-- Detail Buku -->--}%
-            %{--                            <div class="card-body flex-grow-1">--}%
-            %{--                                <h5 class="card-title">${book.title}</h5>--}%
-            %{--                                <p class="card-author">By ${book.author}</p>--}%
-            %{--                                <p class="card-rating">⭐ ${book.rating} / 5 (${book.votes} voters)</p>--}%
-            %{--                                <p class="card-text">${book.description}</p>--}%
-            %{--                                <a href="${book.link}" class="btn btn-primary">Read Now</a>--}%
-            %{--                            </div>--}%
-            %{--                        </div>--}%
-            %{--                    </div>--}%
-            %{--                </g:each>--}%
-            %{--            </div>--}%
-            %{--        </div>--}%
         </div>
     </div>
     <g:render template="/_common/footer"/>
 </div>
-
 <asset:javascript src="search.js"/>
-
 </body>
 </html>

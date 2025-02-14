@@ -19,7 +19,7 @@
                 <h1 class="mb-4">Login</h1>
 
                 <g:if test='${flash.message}'>
-                    <div class="login_message">${flash.message}</div>
+                    <div class="alert alert-danger">${flash.message}</div>
                 </g:if>
 
                 <form action="${postUrl ?: '/login/authenticate'}" method="POST" id="loginForm" class="cssform" autocomplete="off">

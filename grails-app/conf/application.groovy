@@ -5,7 +5,7 @@ grails.plugin.springsecurity.authority.className = 'com.ilal.Role'
 grails.plugin.springsecurity.auth.loginFormUrl = '/login'
 grails.plugin.springsecurity.failureHandler.defaultFailureUrl = '/login?error=true'
 grails.plugin.springsecurity.logout.afterLogoutUrl = '/login'
-grails.plugin.springsecurity.successHandler.defaultTargetUrl = '/login'
+grails.plugin.springsecurity.successHandler.defaultTargetUrl = '/'
 grails.plugin.springsecurity.controllerAnnotations.staticRules = [
         [pattern: '/', access: ['permitAll']],
         [pattern: '/error', access: ['permitAll']],
@@ -22,6 +22,7 @@ grails.plugin.springsecurity.controllerAnnotations.staticRules = [
         [pattern: '/search/**', access: ['permitAll']],
         [pattern: '/detail/**', access: ['permitAll']],
         [pattern: '/register/**', access: ['permitAll']],
+        [pattern: '/profile/**', access: ['permitAll']]
 ]
 
 grails.plugin.springsecurity.filterChain.chainMap = [

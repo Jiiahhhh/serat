@@ -16,10 +16,10 @@
 
 <body>
 <g:render template="/_common/navbar"/>
-<g:render template="home/shared/hero"/>
-<g:render template="home/shared/bestseller"/>
-<g:render template="home/shared/onlinebookfairs"/>
-<g:render template="home/shared/categories"/>
+<g:render template="/home/shared/hero"/>
+<g:render template="/home/shared/bestseller"/>
+<g:render template="/home/shared/onlinebookfairs"/>
+<g:render template="/home/shared/categories"/>
 <g:render template="/_common/footer"/>
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
